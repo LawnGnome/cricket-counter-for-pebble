@@ -1,10 +1,11 @@
 {
+  "sdkVersion": "3",
   "uuid": "a473ddeb-daf1-442b-8af9-7bc60a205339",
   "shortName": "Cricket Counter",
   "longName": "Cricket Counter",
   "companyName": "Adam Harvey",
   "versionCode": 0,
-  "versionLabel": "0.2.0",
+  "versionLabel": "0.3",
   "watchapp": {
     "watchface": false
   },

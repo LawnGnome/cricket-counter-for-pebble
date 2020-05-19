@@ -1,5 +1,9 @@
 # Version History
 
+## 0.3 (May 18, 2020)
+
+* Update to the 4.3 SDK.
+
 ## 0.2 (July 19, 2014)
 
 * Update to the 2.3 SDK (should run on watches running 2.1+).

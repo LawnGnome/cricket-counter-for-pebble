@@ -7,7 +7,7 @@ To reset the app state (for example, when a new innings starts), long press the 
 
 ## Building
 
-You will need the [Pebble SDK](http://developer.getpebble.com/) installed before building. I've only tested the current version against SDK 2.3, although I suspect slightly older versions would also be OK.
+You will need the [Pebble SDK](http://developer.getpebble.com/) installed before building. I've only tested the current version against SDK 4.3.
 
 It's a standard build from here, so:
 
