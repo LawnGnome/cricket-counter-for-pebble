@@ -6,12 +6,14 @@
 #define VERTICAL_MARGIN 6
 #define INNINGS_KEY 1
 
-struct {
+struct
+{
     Layer *top;
     ActionBarLayer *actionBar;
     TextLayer *ball;
     TextLayer *over;
     TextLayer *wicket;
+    StatusBarLayer *statusBar;
 } layers;
 
 GBitmap *menuIcons[3];
@@ -87,7 +89,6 @@ void handle_init() {
 
     window = window_create();
     window_set_background_color(window, GColorWhite);
-    window_set_status_bar_icon(window, windowIcon);
     window_stack_push(window, true);
 
     innings_init(&innings);
@@ -125,6 +126,9 @@ void handle_init() {
     text_layer_set_text_alignment(layers.wicket, GTextAlignmentCenter);
     text_layer_set_text_color(layers.wicket, GColorBlack);
     layer_add_child(layers.top, text_layer_get_layer(layers.wicket));
+
+    layers.statusBar = status_bar_layer_create();
+    layer_add_child(layers.top, status_bar_layer_get_layer(layers.statusBar));
 }
 
 void handle_deinit() {
