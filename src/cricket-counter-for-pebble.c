@@ -117,7 +117,7 @@ void handle_init()
     action_bar_layer_set_icon(layers.actionBar, BUTTON_ID_SELECT, menuIcons[1]);
     action_bar_layer_set_icon(layers.actionBar, BUTTON_ID_DOWN, menuIcons[2]);
 
-    layers.ball = text_layer_create(GRect(HORIZONTAL_MARGIN, VERTICAL_MARGIN + 20, PEBBLE_WIDTH - 2 * VERTICAL_MARGIN, 50));
+    layers.ball = text_layer_create(GRect(HORIZONTAL_MARGIN, VERTICAL_MARGIN + STATUS_BAR_LAYER_HEIGHT, PEBBLE_WIDTH - 2 * VERTICAL_MARGIN, 50));
     text_layer_set_font(layers.ball, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_32)));
     text_layer_set_text_alignment(layers.ball, GTextAlignmentCenter);
     text_layer_set_text_color(layers.ball, GColorBlack);
