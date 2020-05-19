@@ -21,9 +21,9 @@ GBitmap *windowIcon;
 Window *window;
 Innings innings;
 
-char ballBuffer[8];
+char ballBuffer[10];
 char overBuffer[17];
-char wicketBuffer[12];
+char wicketBuffer[13];
 
 void update_text() {
     snprintf(ballBuffer, sizeof(ballBuffer), "Ball: %u", innings_get_ball(&innings));
